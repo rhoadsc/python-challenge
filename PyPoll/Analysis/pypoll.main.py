@@ -45,7 +45,8 @@ with open(file_to_output, 'w') as txt_file:
         f"Election Results\n"
         f"---------------\n")
     txt_file.write(election_header)
-
+    print(f"Total Votes: {total_votes}")
+    txt_file.write(f"Total Votes: {total_votes}\n")
     
     for candidate in candidate_votes:
         votes = candidate_votes[candidate]
